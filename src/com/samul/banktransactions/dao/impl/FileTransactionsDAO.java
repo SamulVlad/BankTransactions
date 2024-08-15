@@ -23,6 +23,7 @@ public class FileTransactionsDAO implements TransactionsDAO {
 
 	@Override
 	public void saveTransaction(Transaction bt) throws DaoException {
+
 		FileWriter out = null;
 		BufferedWriter br = null;
 		PrintWriter pw = null;
@@ -37,6 +38,7 @@ public class FileTransactionsDAO implements TransactionsDAO {
 		} finally {
 			pw.close();
 		}
+
 	}
 
 	@Override

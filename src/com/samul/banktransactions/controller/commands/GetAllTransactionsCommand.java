@@ -18,7 +18,7 @@ public class GetAllTransactionsCommand implements Command {
 			List<Transaction> transactions = logic.getAll();
 			response = transactions.toString();
 		} catch (LogicException e) {
-			response = "Something went wrong";
+			response = "Something went wrong " + e;
 		}
 
 		return response;
